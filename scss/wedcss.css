@@ -1,0 +1,136 @@
+
+.table{
+    box-shadow: 1px 0px 16px #9cf18d;
+}
+
+.table-list{
+    box-shadow: 1px 0px 16px #9cf18d;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/school.jpg");
+    background-size: cover;
+}
+.clearfix
+{
+    clear: both;
+}
+.loginbox
+{   
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 320px;
+    transform: translate(-50%,-50%);
+}
+.loginbox h1
+{
+    font-size: 40px;
+    border-bottom: 6px solid #9cf18d;
+    padding:10px 0;
+    margin-bottom: 50px;  
+}
+.textbox
+{
+    width: 100%;
+    border-bottom: 1px solid #9cf18d;
+    margin: 10px 0 ;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.textbox i
+{
+    font-size: 22px;
+}
+.textbox input
+{
+    background:none;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+
+}
+.btn
+{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color:indigo;
+    font-family: poppins;
+    border: 5px solid #15f4ee;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s; 
+    background: none;
+}
+.btn:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #9cf18d,
+        0 5px 50px 0 black inset, 0 5px 50px 0 black;
+    text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;  
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    height: 90px;
+    width: 360px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .display{
+    z-index: 999;
+    height: 85px;
+    width: 345px;
+    background: whitesmoke;
+    border-radius: 6px;
+    text-align: center;
+}
+.display #time{
+    line-height: 85px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.wrapper span{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: inherit;
+}
+.wrapper span:first-child{
+    filter: blur(7px);
+}
+.wrapper span:last-child{
+    filter: blur(20px);
+}
+
